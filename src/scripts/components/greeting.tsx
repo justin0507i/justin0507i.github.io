@@ -35,15 +35,11 @@ const greetings = [
 ];
 
 export default function Greeting() {
-    console.log('render')
     const [idx, setIdx] = useState(0);
     function increment() {
-        console.log('idx', idx)
         if (idx + 1 < greetings.length) {
-            console.log('a')
             setIdx(idx + 1);
         } else {
-            console.log('b')
             setIdx(0);
         }
     }
